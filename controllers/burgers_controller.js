@@ -20,6 +20,8 @@ router.get('/', (req, res) => {
 // add burger with default condition of devoured = false
 router.post('/burgers', (req, res) => {
     console.log('\nPOST /burgers');
+
+    // if form data is empty, reject
     if (req.body.burgerName === '') {
         return res.status(400).end();
     }
