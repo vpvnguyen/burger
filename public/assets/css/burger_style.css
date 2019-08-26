@@ -10,7 +10,7 @@ body {
     background-color:#fe992e;
   }
   .jumbotron {
-
+    padding-bottom: 0;
     /* transparent jumbotron */
     background: none;
     color: #a75454;
