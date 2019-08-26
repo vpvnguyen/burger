@@ -1,7 +1,26 @@
-.body {
-    background-color: #ffffff;
+body {
     font-family: 'Montserrat', sans-serif;
+
+    /* non scrolling background; fit to window */
+    background-image: url(../img/Cute-Summer-Burger.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    background-size: cover;
+    background-color:#fe992e;
+  }
+  .jumbotron {
+
+    /* transparent jumbotron */
+    background: none;
+    color: #a75454;
 }
-.jumbotron {
-    background-color: #fe992e;
+.orange-header {
+    color: #fb4e50;
+}
+.green-header {
+    color: #28a745;
+}
+.brown-header {
+    color: #a75454;
 }
