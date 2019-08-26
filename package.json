@@ -1,5 +1,5 @@
 {
-  "name": "express-handlebars",
+  "name": "burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/vpvnguyen/node-express-handlebars#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "handlebars": "^4.1.2",
+    "express-handlebars": "^3.1.0",
     "mysql": "^2.17.1"
   }
 }
