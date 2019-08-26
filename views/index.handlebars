@@ -11,17 +11,20 @@
                     aria-label="Burger Name" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-success" id="add-burger" type="button">Add</button>
-                    <button class="btn btn-outline-secondary" type="button">Clear</button>
                 </div>
             </div>
+            <hr class="mb-4">
         </div>
     </div>
 
-    <div class="row text-center mt-5">
+    <div class="row text-center mt-3">
 
         {{!-- list non-devoured burgers --}}
         <div class="col-md-6 burger-active">
-
+            <h3>
+                Ready to eat:
+            </h3>
+            <hr>
             <ul class="list-group cProductsList">
                 {{#each burgers}}
                 {{#unless this.devoured}}
@@ -29,7 +32,7 @@
                     <p class="p-0 m-0 flex-grow-1">{{this.burger_name}}</p>
                     <button type="button" id="{{this.id}}" class='btn btn-outline-danger change-devoured'
                         data-route="/burgers/{{this.id}}" value="{{this.burger_name}}">
-                        Eat Me!</button>
+                        Devour Me!</button>
                 </li>
                 {{/unless}}
                 {{/each}}
@@ -39,7 +42,10 @@
 
         {{!-- list devoured burgers --}}
         <div class="col-md-6 burger-devoured'">
-
+            <h3>
+                Devoured:
+            </h3>
+            <hr>
             <ul class="list-group">
                 {{#each burgers}}
                 {{#if this.devoured}}
