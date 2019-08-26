@@ -27,8 +27,6 @@ var mysql = require('mysql');
 ## Application
 - Start the server: `node server.js`.
 
-![](./gif/github-customerview.gif)
-
 ## Technologies:
 - Express.js
 - Node.js
