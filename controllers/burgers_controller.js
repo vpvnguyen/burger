@@ -5,7 +5,7 @@ var router = express.Router();
 // import the burgers.js to use db functions for burgers
 var burger = require('../models/burger.js');
 
-// routing
+// get all burgers from db
 router.get('/', (req, res) => {
     console.log('\nGET /');
 
