@@ -20,11 +20,13 @@ router.get('/', (req, res) => {
 // add burger with default condition of devoured = false
 router.post('/burgers', (req, res) => {
     console.log('\nPOST /burgers');
-
+    if (req.body.burgerName === '') {
+        return res.status(400).end();
+    }
     burger.insertOne([
         'burger_name', 'devoured'
     ], [
-            req.body.burger_name, false
+            req.body.burgerName, false
         ], (data) => {
             res.redirect('/');
         });
@@ -37,7 +39,6 @@ router.put('/burgers/:id', (req, res) => {
 
     burger.updateOne('devoured', true, id, (data) => {
         if (data.changedRows == 0) {
-            // if no rows were changed, then the ID must not exist, so 404
             return res.status(404).end();
         } else {
             res.status(200).end();
