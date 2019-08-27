@@ -1,4 +1,4 @@
-# Eat-Da-Burger! (Express, Node, MySQL, Handlebars)
+# Eat-Da-Burger! (Express, Node, MySQL, Handlebars, ORM)
 
 Add a burger to a ready to eat list. Click on the devour button to move the burger to the devoured list.
 Deployed to heroku: https://salty-springs-75637.herokuapp.com/
@@ -27,8 +27,12 @@ var mysql = require('mysql');
 ## Application
 - Start the server: `node server.js`.
 
+![](./public/assets/img/eat-da-burger.png)
+
+
 ## Technologies:
 - Express.js
 - Node.js
 - MySQL
 - Handlebars
+- ORM
